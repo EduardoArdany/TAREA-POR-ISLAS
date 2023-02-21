@@ -40,8 +40,11 @@ public class menuControladores implements ActionListener{
         this.VistaMenu.btnRegistroPropietario.addActionListener(this);
         this.VistaMenu.btnReparacion.addActionListener(this);
         
-        
-        
+        //Boton salir
+        this.VistaEntrega.btnSalirE.addActionListener(this);
+        this.VistaEquipos.btnSalirEquipos.addActionListener(this);
+        this.VistaPropietarios.btnSalirPropietarios.addActionListener(this);
+        this.VistaReparacion.btnSalirReparacion.addActionListener(this);
         //Levantar la vista principal
         this.VistaMenu.setSize(826, 701);
         this.VistaMenu.setVisible(true);
@@ -58,6 +61,23 @@ public class menuControladores implements ActionListener{
     
     @Override
     public void actionPerformed(ActionEvent e) {
+        //Botones salir
+        if(e.getSource()==this.VistaEntrega.btnSalirE){                      
+            this.VistaMenu.setLocationRelativeTo(null);
+            this.VistaMenu.setVisible(true);
+        }
+        if(e.getSource()==this.VistaEquipos.btnSalirEquipos){                       
+            this.VistaMenu.setLocationRelativeTo(null);
+            this.VistaMenu.setVisible(true);
+        }
+        if(e.getSource()==this.VistaPropietarios.btnSalirPropietarios){                
+            this.VistaMenu.setLocationRelativeTo(null);
+            this.VistaMenu.setVisible(true);
+        }
+        if(e.getSource()==this.  VistaReparacion.btnSalirReparacion){                
+            this.VistaMenu.setLocationRelativeTo(null);
+            this.VistaMenu.setVisible(true);   
+        }
         //Llevar del fomulario menu al de equipos
         if(e.getSource()==this.VistaMenu.btnIngresoEquipo){
             

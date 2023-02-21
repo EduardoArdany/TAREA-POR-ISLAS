@@ -38,6 +38,7 @@ public class Reparacion extends javax.swing.JFrame {
         txtDescripcion = new javax.swing.JTextField();
         txtTecnico = new javax.swing.JTextField();
         btnReparacion = new javax.swing.JButton();
+        btnSalirReparacion = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -81,6 +82,9 @@ public class Reparacion extends javax.swing.JFrame {
         btnReparacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pckImagenes/reparacion.png"))); // NOI18N
         btnReparacion.setText("Registrar Reparción");
         getContentPane().add(btnReparacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 110, 190, 80));
+
+        btnSalirReparacion.setText("Salir");
+        getContentPane().add(btnSalirReparacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 200, -1, -1));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pckImagenes/FONDO2.jpg"))); // NOI18N
         jLabel6.setText("jLabel6");
@@ -126,6 +130,7 @@ public class Reparacion extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnReparacion;
+    public javax.swing.JButton btnSalirReparacion;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

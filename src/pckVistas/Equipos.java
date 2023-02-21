@@ -38,6 +38,7 @@ public class Equipos extends javax.swing.JFrame {
         btnIngresar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblEquipos = new javax.swing.JTable();
+        btnSalirEquipos = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -65,7 +66,7 @@ public class Equipos extends javax.swing.JFrame {
 
         btnIngresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pckImagenes/INGRESARPC.png"))); // NOI18N
         btnIngresar.setText("Ingresar PC");
-        getContentPane().add(btnIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(439, 99, -1, 78));
+        getContentPane().add(btnIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 80, -1, 78));
 
         tblEquipos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -81,6 +82,9 @@ public class Equipos extends javax.swing.JFrame {
         jScrollPane1.setViewportView(tblEquipos);
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 257, 614, 220));
+
+        btnSalirEquipos.setText("Salir");
+        getContentPane().add(btnSalirEquipos, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 180, -1, -1));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pckImagenes/FONDO2.jpg"))); // NOI18N
         jLabel6.setText("jLabel6");
@@ -126,6 +130,7 @@ public class Equipos extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnIngresar;
+    public javax.swing.JButton btnSalirEquipos;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

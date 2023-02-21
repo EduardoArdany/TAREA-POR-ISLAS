@@ -36,6 +36,7 @@ public class Propietarios extends javax.swing.JFrame {
         btnPropietario = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblPropietarios = new javax.swing.JTable();
+        btnSalirPropietarios = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -59,7 +60,7 @@ public class Propietarios extends javax.swing.JFrame {
 
         btnPropietario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pckImagenes/propietarios.gif"))); // NOI18N
         btnPropietario.setText("Ingresar Propietarios");
-        getContentPane().add(btnPropietario, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 90, -1, 99));
+        getContentPane().add(btnPropietario, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 90, -1, 80));
 
         tblPropietarios.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -75,6 +76,9 @@ public class Propietarios extends javax.swing.JFrame {
         jScrollPane1.setViewportView(tblPropietarios);
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(46, 230, 531, 220));
+
+        btnSalirPropietarios.setText("Salir");
+        getContentPane().add(btnSalirPropietarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 180, -1, -1));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pckImagenes/FONDO2.jpg"))); // NOI18N
         jLabel6.setText("jLabel6");
@@ -120,6 +124,7 @@ public class Propietarios extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnPropietario;
+    public javax.swing.JButton btnSalirPropietarios;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
