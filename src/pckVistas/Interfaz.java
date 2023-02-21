@@ -34,17 +34,25 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
         btnReparacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pckImagenes/MREPARACIONES.png"))); // NOI18N
         btnReparacion.setText("ENTRA A REPARACION");
+        getContentPane().add(btnReparacion);
+        btnReparacion.setBounds(410, 240, 266, 100);
 
         btnEntrega.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pckImagenes/MENTREGAS.png"))); // NOI18N
         btnEntrega.setText("ENTREGAR EQUIPO");
+        getContentPane().add(btnEntrega);
+        btnEntrega.setBounds(140, 240, 247, 100);
 
         btnIngresoEquipo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pckImagenes/MINGRESAREQUIPO.png"))); // NOI18N
         btnIngresoEquipo.setText("INGRESO DE EQUIPO");
+        getContentPane().add(btnIngresoEquipo);
+        btnIngresoEquipo.setBounds(410, 70, 266, 90);
 
         btnRegistroPropietario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pckImagenes/MPROPIETARIOS.png"))); // NOI18N
         btnRegistroPropietario.setText("INGRESO DE PROPIETARIOS");
@@ -53,70 +61,32 @@ public class Interfaz extends javax.swing.JFrame {
                 btnRegistroPropietarioActionPerformed(evt);
             }
         });
+        getContentPane().add(btnRegistroPropietario);
+        btnRegistroPropietario.setBounds(140, 70, 247, 90);
 
         jLabel5.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
         jLabel5.setText("MENÚ PRINCIPAL");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(310, 30, 210, 30);
 
         jLabel1.setFont(new java.awt.Font("Imprint MT Shadow", 2, 18)); // NOI18N
         jLabel1.setText("MACHETE REPARATIONS");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(270, 550, 250, 32);
 
         jLabel2.setFont(new java.awt.Font("Imprint MT Shadow", 2, 18)); // NOI18N
         jLabel2.setText("\"DONDE TU COMPU ES UNA VIDA MAS\"");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(210, 590, 373, 44);
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pckImagenes/LOGOGOD.jpg"))); // NOI18N
+        getContentPane().add(jButton1);
+        jButton1.setBounds(310, 350, 173, 190);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(99, 99, 99)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnEntrega, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnRegistroPropietario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btnIngresoEquipo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnReparacion, javax.swing.GroupLayout.DEFAULT_SIZE, 266, Short.MAX_VALUE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel5)
-                        .addGap(153, 153, 153)))
-                .addGap(132, 132, 132))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel1)
-                    .addComponent(jButton1))
-                .addGap(282, 282, 282))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(206, 206, 206)
-                .addComponent(jLabel2)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnIngresoEquipo, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnRegistroPropietario, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(77, 77, 77)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnReparacion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnEntrega, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(4, 4, 4)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pckImagenes/FONDOGOD.jpg"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(0, -10, 820, 680);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -168,6 +138,7 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
     // End of variables declaration//GEN-END:variables
 }
